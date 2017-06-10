@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dskssk.github.io/"/>
-  <updated>2017-06-10T14:03:53.012Z</updated>
+  <updated>2017-06-10T14:48:56.929Z</updated>
   <id>https://dskssk.github.io/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="https://dskssk.github.io/2017/06/10/icarus%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%A7hexo%E3%82%92%E4%BD%9C%E3%82%8B%E3%81%A8categories%E3%81%A8%E3%81%8B%E3%81%8C404%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E4%BB%B6/"/>
     <id>https://dskssk.github.io/2017/06/10/icarusのテーマでhexoを作るとcategoriesとかが404になった件/</id>
     <published>2017-06-10T13:16:32.000Z</published>
-    <updated>2017-06-10T14:03:53.012Z</updated>
+    <updated>2017-06-10T14:48:56.929Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/not_found.jpg" alt=""></p><p>Hexoという静的サイトジェネレータがありまして、それをつかって当記事なんかも書いています。<br>markdownで書いて、ビルド的なことをすると静的なHTMLに作り替えてくれるやつです。</p><p>基本はそれだけのものなんですが、いろいろなテーマをいろいろな人がつくってまして、<br>それのなかから好きなものを選んで、自分好みのデザインにできるんですね。</p><p>で、私が気に入ったやつが<br><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">icarus</a>というテーマです。</p><p>このテーマは、</p><ul><li>記事のサムネイルを指定できる</li><li>サイト内検索ができる</li><li>コメントの受付ができる</li></ul><p>というところが特徴といえるでしょうか。<br><del>(じっくりテーマ選びしてないんでもしかしたら結構他のテーマでもあるかもしれない)</del></p><p>や、すごくないですか。<br>静的なサイトなのにサイト内検索とか、コメント機能とかついちゃっているんですよ。<br>びっくりですわ。</p><p>さっそくテーマの適用をして、github pagesにデプロイして</p><p>(´＾ω＾｀)ﾆﾁｬｧ…</p><p>ってなってたんですよ。</p><p>で、あちこちさわって、検索機能とかもつかって「すげー、ちゃんと動いとるやんけ」と思っていたら</p><p><a href="https://***.github.io/categories" target="_blank" rel="external">https://***.github.io/categories</a> とかを触ったら<br>404を返しおった。。。</p><p>具体的に言うと</p><p><img src="/img/not_found_links.png" alt=""></p><p>こいつら3つが存在しないって怒られた。</p><p>マジすか。<br>このリンクってHexoのテーマであるところの<br><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">icarus</a>さんが自動生成してくれたんだけど、<br>リンク先存在しないのかよ。。。どうなっとんねん。</p><p>ちょっとググったところissuesが立ってて<br><a href="https://github.com/ppoffice/hexo-theme-icarus/issues/236" target="_blank" rel="external"><code>hexo new page categories</code>してページつくれや</a><br>みたいなことを言ってた。</p><p>ぶっちゃけ「tagsもcategoriesもサイドバーに存在してるんだから別ページとしてわざわざつくらなくてもよくなくなくない？」<br>と思ったので「それらのページを作る」んじゃなく、「それらへのリンクを消す」ことにした。</p><p>どうやら、themes/icarus/_config.yml内の先頭にある「Menus」をみて、リンクを生成しているようだった。<br>だもんでサクッと削除。</p><p><img src="/img/delete_menus.png" alt=""></p><p>これで解決。よしよし。</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/img/not_found.jpg" alt=""></p><p>Hexoという静的サイトジェネレータがありまして、それをつかって当記事なんかも書いています。</p><a id="more"></a><p>markdownで書いて、ビルド的なことをすると静的なHTMLに作り替えてくれるやつです。</p><p>基本はそれだけのものなんですが、いろいろなテーマをいろいろな人がつくってまして、<br>それのなかから好きなものを選んで、自分好みのデザインにできるんですね。</p><p>で、私が気に入ったやつが<br><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">icarus</a>というテーマです。</p><p>このテーマは、</p><ul><li>記事のサムネイルを指定できる</li><li>サイト内検索ができる</li><li>コメントの受付ができる</li></ul><p>というところが特徴といえるでしょうか。<br><del>(じっくりテーマ選びしてないんでもしかしたら結構他のテーマでもあるかもしれない)</del></p><p>や、すごくないですか。<br>静的なサイトなのにサイト内検索とか、コメント機能とかついちゃっているんですよ。<br>びっくりですわ。</p><p>さっそくテーマの適用をして、github pagesにデプロイして</p><p>(´＾ω＾｀)ﾆﾁｬｧ…</p><p>ってなってたんですよ。</p><p>で、あちこちさわって、検索機能とかもつかって「すげー、ちゃんと動いとるやんけ」と思っていたら</p><p><a href="https://***.github.io/categories" target="_blank" rel="external">https://***.github.io/categories</a> とかを触ったら<br>404を返しおった。。。</p><p>具体的に言うと</p><p><img src="/img/not_found_links.png" alt=""></p><p>こいつら3つが存在しないって怒られた。</p><p>マジすか。<br>このリンクってHexoのテーマであるところの<br><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">icarus</a>さんが自動生成してくれたんだけど、<br>リンク先存在しないのかよ。。。どうなっとんねん。</p><p>ちょっとググったところissuesが立ってて<br><a href="https://github.com/ppoffice/hexo-theme-icarus/issues/236" target="_blank" rel="external"><code>hexo new page categories</code>してページつくれや</a><br>みたいなことを言ってた。</p><p>ぶっちゃけ「tagsもcategoriesもサイドバーに存在してるんだから別ページとしてわざわざつくらなくてもよくなくなくない？」<br>と思ったので「それらのページを作る」んじゃなく、「それらへのリンクを消す」ことにした。</p><p>どうやら、themes/icarus/_config.yml内の先頭にある「Menus」をみて、リンクを生成しているようだった。<br>だもんでサクッと削除。</p><p><img src="/img/delete_menus.png" alt=""></p><p>これで解決。よしよし。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/img/not_found.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;Hexoという静的サイトジェネレータがありまして、それをつかって当記事なんかも書いています。&lt;br&gt;markdownで書いて、ビルド的なことをすると静的なHTMLに作り替えてくれるやつで
+      &lt;p&gt;&lt;img src=&quot;/img/not_found.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;Hexoという静的サイトジェネレータがありまして、それをつかって当記事なんかも書いています。&lt;/p&gt;
     
     </summary>
     
@@ -44,13 +44,13 @@
     <link href="https://dskssk.github.io/2017/06/08/hello-world/"/>
     <id>https://dskssk.github.io/2017/06/08/hello-world/</id>
     <published>2017-06-08T12:47:33.000Z</published>
-    <updated>2017-06-10T10:19:43.362Z</updated>
+    <updated>2017-06-10T14:49:27.604Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/clouds-2329680_640.jpg" alt=""></p><p>こんにちは、初めまして。わたしです</p><p>Hexoをつかってブログを書いてみようとしています。</p><p>本当はwordpressを使ってやってみよう、と思っていたんですが、<br>「wordpressって環境作るの面倒くさくね？」<br>「vpsにデプロイするとして、スペックも意外と必要になるのでは」<br>とかいろいろ悩んだ結果、静的サイトジェネレーターというものをしり、<br>そのうちの一つである「Hexo」を使ってみよう、ということで書いています。</p><p>画像も適当に入れてみたりして。</p><p>そのうち広告もいれたいな。</p><p>languageを「ja-jp」じゃなくて「ja」にしたらうまくいった。<br>「ja」っていうのは言語コードで、「jp」ってのは国コードらしい。<br>languageは言語の指定なので「ja」でいいんだな。</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/img/clouds-2329680_640.jpg" alt=""></p><p>こんにちは、初めまして。わたしです</p><p>Hexoをつかってブログを書いてみようとしています。</p><a id="more"></a><p>本当はwordpressを使ってやってみよう、と思っていたんですが、<br>「wordpressって環境作るの面倒くさくね？」<br>「vpsにデプロイするとして、スペックも意外と必要になるのでは」<br>とかいろいろ悩んだ結果、静的サイトジェネレーターというものをしり、<br>そのうちの一つである「Hexo」を使ってみよう、ということで書いています。</p><p>画像も適当に入れてみたりして。</p><p>そのうち広告もいれたいな。</p><p>languageを「ja-jp」じゃなくて「ja」にしたらうまくいった。<br>「ja」っていうのは言語コードで、「jp」ってのは国コードらしい。<br>languageは言語の指定なので「ja」でいいんだな。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/img/clouds-2329680_640.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;こんにちは、初めまして。わたしです&lt;/p&gt;&lt;p&gt;Hexoをつかってブログを書いてみようとしています。&lt;/p&gt;&lt;p&gt;本当はwordpressを使ってやってみよう、と思って
+      &lt;p&gt;&lt;img src=&quot;/img/clouds-2329680_640.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;こんにちは、初めまして。わたしです&lt;/p&gt;&lt;p&gt;Hexoをつかってブログを書いてみようとしています。&lt;/p&gt;
     
     </summary>
     
